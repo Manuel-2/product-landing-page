@@ -1,0 +1,297 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --primary-color: #202020;
+    --secundary-color: #ff0029;
+    --tertiary-color: #2c2c2c;
+    --white-alternative: rgb(238, 238, 238);
+}
+
+html {
+    font-size: 62.5%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.header {
+    width: 100%;
+    height: auto;
+    position: fixed;
+    z-index: 1;
+}
+
+.image-container {
+    width: 100%;
+    height: auto;
+    background-color: var(--primary-color);
+    padding: 8px 10%;
+}
+
+.sub-header {
+    width: 100%;
+    height: auto;
+    background-color: var(--tertiary-color);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 10%;
+}
+
+.sub-header h2 {
+    font-size: 2.2rem;
+    font-weight: 100;
+}
+
+.nav-bar {
+    width: auto;
+    height: auto;
+    align-content: flex-end;
+}
+
+.bar-list {
+    list-style: none;
+    width: 100%;
+}
+
+.bar--element {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.bar--element a {
+    font-size: 1.4rem;
+    color: white;
+    text-decoration: none;
+}
+
+.bar--element a:hover {
+    color: var(--secundary-color);
+}
+
+.subscription-section {
+    padding-top: 150px;
+    padding-bottom: 35px;
+    width: 100%;
+    height: auto;
+    background-color: var(--white-alternative);
+}
+
+.subscription-section--form {
+    width: 400px;
+    height: auto;
+    padding: 25px;
+    margin: 0 auto;
+    font-size: 1.8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#email {
+    border: solid 1px var(--tertiary-color);
+    padding: 5px;
+    font-size: 1.6rem;
+    width: 250px;
+}
+
+.input-element {
+    margin: 10px auto;
+}
+
+#submit {
+    width: 130px;
+    height: 30px;
+    background-color: var(--secundary-color);
+    border: solid 1px white;
+    color: white;
+}
+
+#email:focus {
+    outline-color: var(--secundary-color);
+}
+
+#submit:focus {
+    outline: none;
+    transform: scale(0.95);
+    opacity: 0.5;
+}
+
+.features-section {
+    width: 100%;
+    height: auto;
+}
+
+.features-container {
+    width: 95%;
+    display: flex;
+    margin: 0 auto;
+    padding: 100px 7%;
+}
+
+.features-container--left {
+    margin-left: 50px;
+    max-width: 30%;
+}
+
+.features-container--left img {
+    width: 100%;
+    min-width: 400px;
+}
+
+.features-container--right {
+    padding-left: 15%;
+    width: 70%;
+}
+
+.features-title {
+    font-size: 4rem;
+    padding: 5px;
+    background-color: #ff0029;
+    background-image: linear-gradient(90deg, #ff0029 0%, #870d99 46%, #4a89ff 100%);
+    color: white;
+    margin-bottom: 15px;
+}
+
+.features-description {
+    font-size: 2rem;
+    color: var(--tertiary-color);
+    margin-bottom: 15px;
+}
+
+.features-list {
+    font-size: 1.2rem;
+    color: var(--tertiary-color);
+}
+
+.features-list--item {
+    margin-bottom: 15px;
+}
+
+.video-section {
+    background-color: var(--white-alternative);
+    padding: 70px;
+}
+
+.video-container {
+    margin: 0 auto;
+    width: 850px;
+}
+
+.performance-section {
+    width: 100%;
+    height: 900px;
+    background-image: url(https://rog.asus.com/websites/global/products/gra8kuuj3l2ly6qq/img/kv/product-kv.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.performance-article {
+    position: relative;
+    width: 45%;
+    top: 350px;
+    left: Calc(53%);
+}
+
+.performance-title {
+    font-size: 3.4rem;
+    font-weight: bold;
+    width: 250px;
+    background: linear-gradient(90deg, #ff0029 0%, #870d99 25%, #00a2ff 80%);
+    -webkit-background-clip: text;
+    color: transparent;
+    letter-spacing: 2px;
+    line-height: 50px;
+}
+
+.perfonmance-description {
+    color: white;
+    font-size: 1.8rem;
+    font-weight: 100;
+    letter-spacing: 1px;
+    line-height: 30px;
+}
+
+.aura-section {
+    width: 100%;
+    background-color: black;
+    padding: 50px;
+}
+
+.aura-container {
+    display: flex;
+}
+
+.aura-text-container {
+    color: white;
+    padding-top: 100px;
+}
+
+.aura-title {
+    font-size: 4rem;
+    margin-bottom: 5px;
+    width: 250px;
+    background: linear-gradient(90deg, #ff0029 0%, #870d99 25%, #00a2ff 80%);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.aura-subtitle {
+    font-size: 2.6rem;
+    font-weight: 100;
+    margin-bottom: 15px;
+}
+
+.aura-description {
+    font-size: 1.8rem;
+    line-height: 30px;
+    font-weight: 100;
+}
+
+.footer {
+    width: 100%;
+    height: 150px;
+    background-color: #161616;
+    font-size: 2rem;
+    color: rgb(189, 189, 189);
+    padding: 50px;
+}
+
+.footer a {
+    color: var(--secundary-color);
+}
+
+@media (max-width:1500px) {
+    .features-container {
+        flex-direction: column;
+        padding-top: 0;
+    }
+    .features-container--left {
+        margin-left: 50px;
+        max-width: 40%;
+        margin: 0 auto;
+    }
+    .features-container--left img {
+        width: 100%;
+        min-width: 400px;
+    }
+    .features-container--right {
+        padding-left: 0;
+        width: 100%;
+    }
+    .aura-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .aura-text-container {
+        padding: 50px 150px;
+    }
+}
